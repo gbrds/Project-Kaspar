@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Add Product</a></li>
+            <li><a href="#">Admin Products</a></li>
+        </ul>
+    </nav>
+
+    <div class="product-container">
+        <% .forEach(book => { %>
+            <div class="product-card">
+                <h3><% .title %></h3>
+                <img src="<% .imageURL %>" alt="<% .title %>">
+                <p class="price"<% .price %></p>
+                <p><% .description %></p>
+                <button>Add to Cart</button>
+            </div>
+       <% }); %>
+    </div>
+</body>
+</html>
