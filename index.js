@@ -24,5 +24,5 @@ app.use((req, res, next) => {
 })
 
 app.listen(3002, () => {
-    console.log('server is connected')
+    console.log('web server is connected')
 })
